@@ -42,7 +42,7 @@ body {
   display: grid;
   gap: 1.5rem;
   padding-block: 2rem;
-  /* width: 70%; */
+   max-width: 70%; 
   margin-inline: auto;
   margin-top: 15%;
   padding-left: 2%;
