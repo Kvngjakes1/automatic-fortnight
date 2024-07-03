@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  Font-size: 0.9rem;
+  font-weight: 600;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.grid-item1 {
+  background-color: hsl(263, 55%, 52%);
+  padding: 6%;
+  color: hsl(0, 0%, 81%);
+}
+
+.grid-item2 {
+  background-color: hsl(217, 19%, 35%);
+  padding: 6%;
+  color: hsl(0, 0%, 81%);
+ 
+}
+
+.grid-item4 {
+  background-color: hsl(219, 29%, 14%);
+  padding: 6%;
+  color: hsl(0, 0%, 81%);
+}
+
+.grid-item3,
+.grid-item5 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 6%;
+  color: black;
+}
+
+.grid-image img {
+  border-radius: 50%;
+  height: 6vh;
+}
+
+.container {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  /* width: 70%; */
+  margin-inline: auto;
+  margin-top: 15%;
+  padding-left: 2%;
+ 
+}
+
+.name {
+  color: hsl(219, 29%, 14%);
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.Verified {
+  color: hsl(0, 0%, 81%);
+  opacity: 50%;
+  font-weight: 400;
+}
+
+.Review {
+  color: hsl(0, 0%, 81%);
+  opacity: 80%;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.grid-item2 .name, .grid-item4 .name{
+  color: hsl(217, 32%, 92%);
+}
+
+.bold {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 980px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    width: 80vw;
+    margin-top: 10%;
+  }
+  .grid-item5 > .Review{
+   
+    line-height: 1.7;
+    letter-spacing: .9;
+  }
+.bold {
+  font-size: 1rem;
+}
+.Review {
+  font-size: .8rem;
+}
+  .grid-item:last-child {
+    grid-column-start: 4;
+    grid-row: 1 / span 2;
+  }
+
+  .grid-col-span2 {
+    grid-column: span 2;
+  }
+
+}
